@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula05EstruturasLogicas {
+public class Aula04EstruturasLogicas {
     public static void main(String[] args) {
         boolean verificacao = true;
 
