@@ -22,10 +22,12 @@ public class Carro {
     }
 
     public String getNome() {
+
         return nome;
     }
 
     public void setNome(String nome) {
+
         this.nome = nome;
     }
 
@@ -34,14 +36,17 @@ public class Carro {
     }
 
     public void setVelocidadeMaxima(double velocidadeMaxima) {
+
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    public static double getVelocidadeLimite() {
+    public static double getVelocidadeLimiteu() {
+
         return velocidadeLimite;
     }
 
     public static void setVelocidadeLimite(double velocidadeLimite) {
+
         Carro.velocidadeLimite = velocidadeLimite;
     }
 }

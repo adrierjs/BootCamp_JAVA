@@ -1,15 +1,24 @@
-package academy.devdojo.maratonajava.javacore.Eblocosdeinicializacao.dominio;
+package academy.devdojo.maratonajava.javacore.Fmodificadorstatic.dominio;
 
 public class Filmes {
     private String nome, duracao;
-    private int[] episodios;
+    private static int[] episodios;
 
-    {
+    static { //Garantido que ele irá ser executado só uma vez, pois será alocado na JVM
         episodios = new int[100];
+        System.out.println("\nDentro do bloco de inicialização");
         for (int i = 0; i < episodios.length; i++) {
             episodios[i] = i+1;
             System.out.print(episodios[i]+" ");
         }
+    }
+
+    static {
+        System.out.println("\nDentro do bloco de inicialização 2");
+    }
+
+    static {
+        System.out.println("Dentro do bloco de inicialização 3");
     }
 
     public Filmes() {
