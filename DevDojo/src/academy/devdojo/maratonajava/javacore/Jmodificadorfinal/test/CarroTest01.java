@@ -8,9 +8,10 @@ public class CarroTest01 {
         Carro carro = new Carro();
         System.out.println(carro.getVELOCIDADE_LIMITE());
         System.out.println(carro.getComprador());
-        carro.COMPRADOR.setNome("Adrier");
-        carro.COMPRADOR.setValor(40.000);
-        System.out.println(carro.COMPRADOR.getNome()+"\n"+
-                carro.COMPRADOR.getValor());
+        carro.getComprador().setNome("Adrier");
+        carro.getComprador().setValor(40.000);
+        System.out.println("Comprador: "+carro.getComprador().getNome()+"\n"+
+                "Valor:" +carro.getComprador().getValor());
+
     }
 }
