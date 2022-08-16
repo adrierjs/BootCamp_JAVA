@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Kenumeracao.test;
 
 import academy.devdojo.maratonajava.javacore.Kenumeracao.dominio.Cliente;
 import academy.devdojo.maratonajava.javacore.Kenumeracao.dominio.TipoCliente;
+import academy.devdojo.maratonajava.javacore.Kenumeracao.dominio.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class ClienteTest01 {
         System.out.println(cliente.toString());
         System.out.println(cliente1.toString());
         System.out.println(cliente2.toString());
+        System.out.println(TipoPagamento.DEBITO.calcularPagamento(100));
 
 
     }

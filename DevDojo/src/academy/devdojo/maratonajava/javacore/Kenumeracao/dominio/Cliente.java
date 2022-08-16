@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Kenumeracao.dominio;
 public class Cliente {
     private String nome;
     private TipoCliente tipoCliente; //criei a enumeração para forçar ao usuário a colocar somente os atributos necessários na enumeração.
-
+    private TipoPagamento tipoPagamento;
     public Cliente(String nome, TipoCliente tipoCliente){
         this.nome = nome;
         this.tipoCliente = tipoCliente;
